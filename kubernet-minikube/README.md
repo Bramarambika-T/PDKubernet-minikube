@@ -2,6 +2,8 @@ Create a NGINX docker container and build :
 
 docker build -t bramarambikatsaliki/nginx:latest dockerfile-location
 Push it to docker hub - using docker push bramarambikatsaliki/nginx:latest
+If there is login problem- use docker login cmd then docker push bramarambikatsaliki/nginx:latest
+
 if you like to run image - docker run -it -d -p 8080:80 nginx
 
 Minikube cluster Installation in local Mac machine :
