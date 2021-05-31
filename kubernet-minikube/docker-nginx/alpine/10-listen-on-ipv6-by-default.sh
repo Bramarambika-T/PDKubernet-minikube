@@ -52,7 +52,6 @@ case "$ID" in
         exit 0
         ;;
 esac
-
 # enable ipv6 on default.conf listen sockets
 sed -i -E 's,listen       80;,listen       80;\n    listen  [::]:80;,' /$DEFAULT_CONF_FILE
 
